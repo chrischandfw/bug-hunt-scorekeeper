@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import { 
     redirectToGames, 
     signInUser, 
@@ -33,6 +34,7 @@ signInForm.addEventListener('submit', async(event)=>{
     if (user){
         redirectToGames();
     } else {
+        // eslint-disable-next-line no-console
         console.error(user);
     }
 });
